@@ -45,7 +45,7 @@ The entire training pipeline runs on a **single Kaggle P100 GPU (16GB VRAM)** �
     └── README.md                   # Model card
 ```
 For running Step 5, go to https://wandb.ai, get an API Key, and paste it into the secret folder in the Kaggle notebook.
-And you need another one thing, which you get from 'Hugging Face/profile/access tokens/ select write permission and generate token and paste in secret folder, also agree to the terms and conditions on Gemma.2 9b official page on Hugging Face.
+And you need another thing, which you get from 'Hugging Face/profile/access tokens/ select write permission and generate token and paste in secret folder, also agree to the terms and conditions on Gemma.2 9b official page on Hugging Face.
 
 ---
 
@@ -102,7 +102,7 @@ BitsAndBytes NF4 (NormalFloat 4-bit) quantization compresses model weights from 
 ### Challenge 1: Gemma-2 System Role Not Supported
 Gemma-2's chat template does not accept a `system` role, causing a `TemplateError` during dataset formatting.
 
-**Solution:** Merge the system instruction into the user turn:
+**Solution:** Merge the system instruction into the user's turn:
 ```python
 user_content = f"{row['instruction']}\n\n{row['input']}"
 messages = [
@@ -157,7 +157,7 @@ gradient_checkpointing_kwargs={"use_reentrant": False},
 
 ---
 
-## 📊 Training Results
+## Training Results
 
 | Metric | Value |
 |--------|-------|
@@ -173,7 +173,7 @@ The validation loss decreased steadily throughout training — from **2.255** at
 
 ---
 
-## 🚀 Inference — How to Use
+##  Inference — How to Use
 
 ### Load the Fine-Tuned Model
 
@@ -201,7 +201,7 @@ base_model = AutoModelForCausalLM.from_pretrained(
 model = PeftModel.from_pretrained(base_model, "./Ali Sajid")
 tokenizer = AutoTokenizer.from_pretrained("./Ali Sajid")
 
-print("✅ Model loaded successfully!")
+print(" Model loaded successfully!")
 ```
 
 ### Run Inference
