@@ -1,0 +1,35 @@
+# Ignore large and binary files
+adapter_model.safetensors
+checkpoint-1100/adapter_model.safetensors
+checkpoint-1125/adapter_model.safetensors
+checkpoint-1100/optimizer.pt
+checkpoint-1100/rng_state.pth
+checkpoint-1100/scheduler.pt
+checkpoint-1100/trainer_state.json
+checkpoint-1100/training_args.bin
+checkpoint-1100/tokenizer.json
+checkpoint-1100/tokenizer_config.json
+checkpoint-1125/optimizer.pt
+checkpoint-1125/rng_state.pth
+checkpoint-1125/scheduler.pt
+checkpoint-1125/trainer_state.json
+checkpoint-1125/training_args.bin
+checkpoint-1125/tokenizer.json
+checkpoint-1125/tokenizer_config.json
+
+# Ignore model checkpoints
+checkpoint-1100/
+checkpoint-1125/
+
+# Ignore notebook output (if large)
+fine-tune-gemma-2-9b-qlora-unsloth-hcm-100k.ipynb
+
+# Ignore zip and output folders (if created)
+gemma-2-9b-it-healthcare-adapter.zip
+Ali Sajid/
+
+# Ignore any other large files
+*.safetensors
+*.pt
+*.bin
+*.pth
