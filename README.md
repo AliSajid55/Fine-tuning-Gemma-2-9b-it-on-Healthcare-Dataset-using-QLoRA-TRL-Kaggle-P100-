@@ -44,6 +44,8 @@ The entire training pipeline runs on a **single Kaggle P100 GPU (16GB VRAM)** �
     ├── chat_template.jinja         # Gemma-2 chat format template
     └── README.md                   # Model card
 ```
+For running Step 5, go to https://wandb.ai, get an API Key, and paste it into the secret folder in the Kaggle notebook.
+And you need another one thing, which you get from 'Hugging Face/profile/access tokens/ select write permission and generate token and paste in secret folder, also agree to the terms and conditions on Gemma.2 9b official page on Hugging Face.
 
 ---
 
