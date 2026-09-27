@@ -271,4 +271,4 @@ This model is intended **for educational and research purposes only**. It should
 ## 👤 Author
 
 **Ali Sajid**
-Fine-tuned on Kaggle · Tracked with Weights & Biases · March 2026
+Fine-tuned on Kaggle · Tracked with Weights & Biases · September 2026
